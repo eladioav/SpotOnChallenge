@@ -39,9 +39,9 @@ class MasterViewController: UITableViewController, ModelToView {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
             if let indexPath = tableView.indexPathForSelectedRow {
-                //let object = objects[indexPath.row] as! NSDate
+                let restaurant = self.model.getRestaurant(index: indexPath.row)
                 let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
-                //controller.detailItem = object
+                controller.restaurant = restaurant
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }
@@ -64,6 +64,7 @@ class MasterViewController: UITableViewController, ModelToView {
         let object = self.model.getRestaurant(index: indexPath.row)
         cell.textLabel!.text = object.name
         cell.detailTextLabel?.text = object.location.address1 ?? "Not defined location"
+        cell.backgroundColor = indexPath.row % 2 == 0 ? UIColor.white : UIColor.lightGray
         return cell
     }
 

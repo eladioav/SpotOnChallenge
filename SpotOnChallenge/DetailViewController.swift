@@ -12,29 +12,33 @@ import MapKit
 class DetailViewController: UIViewController {
 
     @IBOutlet weak var map: MKMapView!
-    var coordinates : Coordinates?
+    @IBOutlet weak var addressLabel: UILabel!
+    var restaurant : Restaurant?
+    let regionRadius: CLLocationDistance = 100
     
     func configureView() {
         // Update the user interface for the detail item.
-        
-        
-        if let detail = detailItem {
-            if let label = detailDescriptionLabel {
-                label.text = detail.description
-            }
+        if let coord = restaurant?.coordinates {
+            let coordinates = CLLocation(latitude: coord.latitude, longitude: coord.longitude)
+            self.centerMapOnLocation(location: coordinates, title: restaurant?.name ?? "No name")
         }
+        
+        self.addressLabel.text = restaurant?.location.address1 ?? "No address"
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        map.mapType = .satelliteFlyover
         configureView()
     }
     
     /// Center map on location
-    func centerMapOnLocation(location: CLLocation) {
+    func centerMapOnLocation(location: CLLocation, title : String) {
         
         let coordinateRegion = MKCoordinateRegion(center: location.coordinate,latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
+        var annotation = MapPin(coordinate: coordinateRegion.center, title: title, subtitle: "Here")
+        self.map.addAnnotation(annotation)
         self.map.setRegion(coordinateRegion, animated: true)
     }
 

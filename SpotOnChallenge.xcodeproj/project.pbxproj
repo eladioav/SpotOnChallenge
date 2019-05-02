@@ -19,6 +19,7 @@
 		7921A666227B677B005D84D6 /* MasterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7921A665227B677B005D84D6 /* MasterViewModel.swift */; };
 		7921A668227B67B3005D84D6 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7921A667227B67B3005D84D6 /* Models.swift */; };
 		7921A66A227B681F005D84D6 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7921A669227B681F005D84D6 /* Protocols.swift */; };
+		7921A66C227BB274005D84D6 /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7921A66B227BB274005D84D6 /* Annotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		7921A665227B677B005D84D6 /* MasterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewModel.swift; sourceTree = "<group>"; };
 		7921A667227B67B3005D84D6 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		7921A669227B681F005D84D6 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		7921A66B227BB274005D84D6 /* Annotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				7921A663227B6553005D84D6 /* APICaller.swift */,
 				7921A667227B67B3005D84D6 /* Models.swift */,
 				7921A669227B681F005D84D6 /* Protocols.swift */,
+				7921A66B227BB274005D84D6 /* Annotation.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				7921A635227B6522005D84D6 /* MasterViewController.swift in Sources */,
 				7921A668227B67B3005D84D6 /* Models.swift in Sources */,
 				7921A633227B6522005D84D6 /* AppDelegate.swift in Sources */,
+				7921A66C227BB274005D84D6 /* Annotation.swift in Sources */,
 				7921A664227B6553005D84D6 /* APICaller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
