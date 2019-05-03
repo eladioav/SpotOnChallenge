@@ -38,10 +38,10 @@
                                 <rect key="frame" x="0.0" y="27" width="414" height="896"/>
                             </mapView>
                             <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hDa-Ye-jbM">
-                                <rect key="frame" x="20" y="800" width="374" height="72"/>
+                                <rect key="frame" x="20" y="800" width="374" height="77"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbR-Q9-Tpw">
-                                        <rect key="frame" x="5" y="23.5" width="364" height="25.5"/>
+                                        <rect key="frame" x="5" y="26" width="364" height="25.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
@@ -49,6 +49,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="BIq-yL-Yjd"/>
                                     <constraint firstItem="vbR-Q9-Tpw" firstAttribute="centerY" secondItem="hDa-Ye-jbM" secondAttribute="centerY" id="H2S-DP-KQO"/>
                                     <constraint firstItem="vbR-Q9-Tpw" firstAttribute="centerX" secondItem="hDa-Ye-jbM" secondAttribute="centerX" id="Kuq-mY-19D"/>
                                     <constraint firstItem="vbR-Q9-Tpw" firstAttribute="leading" secondItem="hDa-Ye-jbM" secondAttribute="leading" constant="5" id="m4I-Wr-Iwy"/>
@@ -58,14 +59,13 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="hDa-Ye-jbM" firstAttribute="bottom" secondItem="VUw-jc-0yf" secondAttribute="bottom" constant="10" id="AwT-ZU-hpp"/>
+                            <constraint firstItem="hDa-Ye-jbM" firstAttribute="bottom" secondItem="VUw-jc-0yf" secondAttribute="bottom" constant="15" id="AwT-ZU-hpp"/>
                             <constraint firstItem="VUw-jc-0yf" firstAttribute="trailing" secondItem="hDa-Ye-jbM" secondAttribute="trailing" constant="20" id="DjJ-Zs-W2M"/>
                             <constraint firstItem="tCp-Ll-BkS" firstAttribute="centerY" secondItem="VUw-jc-0yf" secondAttribute="centerY" id="b05-aC-vXc"/>
                             <constraint firstItem="tCp-Ll-BkS" firstAttribute="width" secondItem="svH-Pt-448" secondAttribute="width" id="drK-TU-buI"/>
                             <constraint firstItem="tCp-Ll-BkS" firstAttribute="height" secondItem="svH-Pt-448" secondAttribute="height" id="gjC-jT-ZMD"/>
                             <constraint firstItem="tCp-Ll-BkS" firstAttribute="centerX" secondItem="VUw-jc-0yf" secondAttribute="centerX" id="r74-Rz-cm4"/>
                             <constraint firstItem="hDa-Ye-jbM" firstAttribute="leading" secondItem="VUw-jc-0yf" secondAttribute="leading" constant="20" id="rGV-8n-hLo"/>
-                            <constraint firstItem="hDa-Ye-jbM" firstAttribute="top" secondItem="VUw-jc-0yf" secondAttribute="top" constant="712" id="xVi-MI-Wrf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VUw-jc-0yf"/>
                     </view>
